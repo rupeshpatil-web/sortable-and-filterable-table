@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="container-lg mt-5">
+      <h3 class="text-center mb-4">Sortable Filterable Table</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Enter Username" aria-describedby="basic-addon1" id="Name">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">@</span>
+            <input type="email" class="form-control" placeholder="Enter E-mail" aria-label="Email" aria-describedby="basic-addon2" id="E-mail">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3">@</span>
+            <input type="number" class="form-control" placeholder="Enter age" aria-label="Age" aria-describedby="basic-addon3" id="age">
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table">
+        <h2 class="mt-5">User Table</h2>
+        <input type="text" id="filterInput" class="form-control mb-3" placeholder="Filter by name" oninput="filterNames()">
+    </div>
+    <div class="output" id="output"></div>
+    <div class="output" id="output1"></div>
+    <div class="output" id="output2"></div>
+</body>
